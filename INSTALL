@@ -1,12 +1,16 @@
 TODO:
 Refactor code to build a library
 
-1. Adjust settings.py file with the RSS that you want to parse
+1. Install packages
 
-2. Create dirs:
+sudo pip install BeautifulSoup feedparser
+
+2. Adjust settings.py file with the RSS that you want to parse
+
+3. Create dirs:
 
 mkdir articles_not_parsed html logs mobi
 
-3. Execute the python file:
+4. Execute the python file:
 
 python rss_py.py
