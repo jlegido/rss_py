@@ -57,6 +57,17 @@ url_timeout = 20
 create_mobi = False
 
 media = (
+        {'title':'La Marea',
+            'url':'https://www.lamarea.com/feed/',
+            'tag':('<div class="shortcode-content">', 
+                   '<!-- END .shortcode-content -->',),
+            'date_parsing_callback':'_date_parsing_callback_1',
+        },
+)
+ 
+
+'''
+media = (
         {'title':'Indymedia Barcelona',
             'url':'http://barcelona.indymedia.org/newswire.rss',
             'tag':('class="summary">','<tr><td colspan="2" class="license">',),
@@ -117,3 +128,4 @@ media = (
         },
 
 )
+'''
