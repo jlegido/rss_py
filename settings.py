@@ -8,8 +8,7 @@ from os.path import basename
 
 # Bytes
 minFileSize = 3000
-#path = os.path.dirname(os.path.realpath(__file__))+'/'
-path = '/mnt/rss/'
+path = os.path.dirname(os.path.realpath(__file__))+'/'
 path_mobi = path + 'mobi/'
 path_log = path + 'logs/'
 path_log_main = path_log + 'main.log'
@@ -110,4 +109,11 @@ media = (
                      '<p style="text-align:center">', ),
             'date_parsing_callback' : '_date_parsing_callback_1',
         },
+        {'title':'Anarchistnews',
+            'url':'https://anarchistnews.org/rss.xml',
+            'tag':('<div class="field-item even" property="content:encoded">',
+                   '<div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above">',),
+            'date_parsing_callback':'_date_parsing_callback_1',
+        },
+
 )
